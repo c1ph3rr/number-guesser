@@ -30,6 +30,7 @@ function checkNumber(){
         guessLeft-=1;
         if(guessLeft===0){
             input.disabled=true;
+            submit.disabled=true;
             input.style.borderColor='red';
             setMsg(`GAME OVER, you lost. The correct number was ${winNum}`,'red');   
         }
